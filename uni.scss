@@ -1,0 +1,107 @@
+//字体图标引入
+@import "@/common/css/iconFont";
+
+//汇博主题色
+$main-color:#45E3D4;
+//汇博主体文字颜色
+$main-font-color:#222;
+
+//input及textarea提示字体颜色
+.placeholder{
+	color: #C5C5C5;
+}
+
+//隐藏scroll-view滚动条
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+
+//字体定义
+@mixin font($font-size,$line-height,$color,$font-weight:normal){
+	font-size: $font-size+rpx;
+	line-height: $line-height+rpx;
+	color: $color;
+	font-weight: $font-weight;
+}
+
+//flex垂直居中对齐
+@mixin vertical{
+	display: flex;
+	align-items: center;
+}
+
+//flex两端对齐
+@mixin space-between{
+	@include vertical;
+	justify-content:space-between;
+}
+
+//文字溢出隐藏
+@mixin ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+//简历预览界面标题标记
+@mixin title-marker{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+	width:12rpx;
+	height:12rpx;
+	border-radius:12rpx;
+	background:#30E1D1;
+}
+
+//登录
+.login-title{
+	margin-bottom:30rpx;
+	@include font(50,50,$main-font-color,bold);
+}
+
+.login-operation-item{
+	@include vertical;
+	padding:50rpx 0 30rpx;
+	border-bottom:1rpx solid #DCDCDC;
+
+	input{
+		display:block;
+		flex-grow:1;
+		@include font(30,30,$main-font-color);
+	}
+
+	.login-operation-icon{
+		display:block;
+		margin-right:20rpx;
+		font-size:34rpx !important;
+		color:$main-font-color;
+	}
+
+	.login-operation-empty{
+		font-size:26.5rpx;
+		color:#ccc;
+		padding:0 20rpx;
+	}
+}
+
+.login-submit{
+	margin:50rpx 0 40rpx;
+	width:100%;
+	height:88rpx;
+	@include font(36,88,#fff);
+	text-align:center;
+	background:#0DDFCE;
+	border-radius:4rpx;
+}
+
+.login-tocode{
+	@include font(28,28,$main-font-color);
+}
+
+//登录 -end-
