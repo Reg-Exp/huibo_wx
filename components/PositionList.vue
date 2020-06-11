@@ -1,10 +1,10 @@
 <template>
   <view class="position-panel">
-    <view class="position-item">
+    <view class="position-item" v-for="(item,index) in positonList" :key="index">
       <view class="position-item-header">
         <div class="item-header-info">
           <div class="item-title">
-            高级产品经理...
+            {{item.title}}
           </div>
           <image src="../static/position-tips.png" class="item-header-tips"></image>
         </div>
@@ -47,7 +47,13 @@
 
 <script>
   export default {
-    name: "PositionList"
+    name: "PositionList",
+    props: {
+      positonList: {
+        type: Array,
+        default: ''
+      }
+    },
   }
 </script>
 
@@ -56,6 +62,9 @@
     margin-bottom: 16rpx;
     padding: 48rpx 40rpx;
     background: #fff;
+    &:first-child{
+      padding-top: 20rpx;
+    }
 
     .position-item-header{
       @include space-between;
@@ -70,6 +79,74 @@
           @include ellipsis;
 
         }
+
+        .item-header-tips{
+          margin-left: 16rpx;
+          width: 32rpx;
+          height: 32rpx;
+        }
+      }
+
+      .item-salary{
+        @include font(30,30,#F8664F)
+      }
+    }
+
+    .position-item-content{
+      @include vertical;
+      margin-bottom: 48rpx;
+
+      .content-list{
+        margin-right: 20rpx;
+        padding: 10rpx;
+        @include font(24,24,#666);
+        background: #F6F6F6;
+        border-radius: 6rpx;
+      }
+    }
+
+    .positon-company{
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .company-info{
+        @include vertical;
+
+        .company-icon{
+          margin-right: 24rpx;
+          width: 64rpx;
+          height: 64rpx;
+        }
+
+        .company-info-panel{
+          max-width: 370rpx;
+
+          .company-title{
+            margin-bottom: 15rpx;
+            @include font(30,30,$main-font-color)
+          }
+
+          .company-tips{
+            @include font(24,24,#AAA)
+          }
+        }
+      }
+
+      .positon-date{
+        @include font(22,22,#C7C7C7);
+      }
+    }
+
+    .position-recommend{
+      @include vertical;
+      margin-top: 40rpx;
+      @include font(24,24,#AAA);
+
+      image{
+        margin-right: 8rpx;
+        width: 24rpx;
+        height: 24rpx;
       }
     }
   }

@@ -66,7 +66,7 @@
     <!--页面筛选 -end- -->
 
     <!--职位列表-->
-    <PositionList></PositionList>
+    <PositionList :positonList="positionList"></PositionList>
     <!--职位列表 -end--->
 
     <!--登录弹窗-->
@@ -112,6 +112,18 @@
             url:'login/index',
           }
         ],
+        //页面数据
+        userInfo:{
+
+        },
+        //职位列表
+        positionList:[{
+          title:'高级产品经理'
+        },{
+          title:'中级产品经理'
+        },{
+          title:'低级产品经理'
+        }],
         //接口携带参数
         req: {
           page_pageno: 1,
@@ -249,6 +261,10 @@
 
   //职位推荐导航
   .index-position-recommend{
+    position: sticky;
+    top: 350rpx;
+    left: 0;
+    z-index: 900;
     display: flex;
     justify-content: space-between;
     padding: 40rpx 40rpx 0;
@@ -301,6 +317,9 @@
 
   //页面筛选
   .index-filtrate{
+    position: sticky;
+    top: 470rpx;
+    left: 0;
     @include space-between;
     padding: 35rpx 40rpx 20rpx;
     background: #fff;

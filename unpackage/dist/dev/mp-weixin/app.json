@@ -53,5 +53,6 @@
       "desc": "获取位置信息用于提供用户所在城市数据"
     }
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap76.json"
 }

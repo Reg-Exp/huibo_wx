@@ -451,6 +451,11 @@ page {
   text-align: center;
 }
 .index-position-recommend {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 350rpx;
+  left: 0;
+  z-index: 900;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -510,6 +515,10 @@ page {
   height: 36rpx;
 }
 .index-filtrate {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 470rpx;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

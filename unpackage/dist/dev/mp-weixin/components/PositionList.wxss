@@ -333,6 +333,9 @@
   padding: 48rpx 40rpx;
   background: #fff;
 }
+.position-item.data-v-538c91b1:first-child {
+  padding-top: 20rpx;
+}
 .position-item .position-item-header.data-v-538c91b1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -362,5 +365,99 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.position-item .position-item-header .item-header-info .item-header-tips.data-v-538c91b1 {
+  margin-left: 16rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.position-item .position-item-header .item-salary.data-v-538c91b1 {
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #F8664F;
+  font-weight: normal;
+}
+.position-item .position-item-content.data-v-538c91b1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 48rpx;
+}
+.position-item .position-item-content .content-list.data-v-538c91b1 {
+  margin-right: 20rpx;
+  padding: 10rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #666;
+  font-weight: normal;
+  background: #F6F6F6;
+  border-radius: 6rpx;
+}
+.position-item .positon-company.data-v-538c91b1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.position-item .positon-company .company-info.data-v-538c91b1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.position-item .positon-company .company-info .company-icon.data-v-538c91b1 {
+  margin-right: 24rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+.position-item .positon-company .company-info .company-info-panel.data-v-538c91b1 {
+  max-width: 370rpx;
+}
+.position-item .positon-company .company-info .company-info-panel .company-title.data-v-538c91b1 {
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  color: #222;
+  font-weight: normal;
+}
+.position-item .positon-company .company-info .company-info-panel .company-tips.data-v-538c91b1 {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #AAA;
+  font-weight: normal;
+}
+.position-item .positon-company .positon-date.data-v-538c91b1 {
+  font-size: 22rpx;
+  line-height: 22rpx;
+  color: #C7C7C7;
+  font-weight: normal;
+}
+.position-item .position-recommend.data-v-538c91b1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #AAA;
+  font-weight: normal;
+}
+.position-item .position-recommend image.data-v-538c91b1 {
+  margin-right: 8rpx;
+  width: 24rpx;
+  height: 24rpx;
 }
 
