@@ -2557,15 +2557,15 @@ var index_esm = {
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.baseUrl = void 0; /**
                                                                                                       * 接口请求URL配置
                                                                                                       */
-var VERSION = 'v4.4.9';
+var VERSION = 'v4.5';
 //const BASE_HOST = "https://wxmp.huibo.com";
 // const BASE_HOST = "http://wx.hbs.com";
 //const BASE_HOST = "http://wxmp.hb.com";
 //const BASE_HOST = "http://wxmp.beta.huibo.com";
 
 
-//const  BASE_HOST='http://app2.beta.huibo.com/';
-var BASE_HOST = 'http://app2.huibo.com/';
+var BASE_HOST = 'http://app2.beta.huibo.com/';
+//const  BASE_HOST='http://app2.huibo.com/';
 
 var local_area_id = uni.getStorageSync('local_area_id') ? uni.getStorageSync('local_area_id') : uni.getStorageSync('auto_local_area_id') ? uni.getStorageSync('auto_local_area_id') : '0300';
 
@@ -2743,6 +2743,17 @@ var _default = {
   removeStorageSync: removeStorageSync,
   loginStatus: loginStatus };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 137:
+/*!******************************************************************!*\
+  !*** /Users/vergil/huibo/huibo_wx/static/position-recommend.png ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmOWY3OWI0Yy1iN2JiLTY0NDYtYmUyZS03MzEwNmFjZDY0YTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzlBQjk1MDFBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzlBQjk1MDBBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTI2NDcyYWMtNDVkYi1mMTQ3LTgxYzUtMGYzMzdiN2M4NDNiIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmY5Zjc5YjRjLWI3YmItNjQ0Ni1iZTJlLTczMTA2YWNkNjRhMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps+Iv/UAAAHHSURBVHjatJZNKERRFMffvJnGRpoxSRZSioVJSVIiJisrJF8pG9lZSJIdzUKskCI7kpSkzCxZYEqTBWUUiWJBFqR85bvxP3VGt9fc967xnPr13r3n3vPvvnvuuc8RjUY1E6sGrSAACoCb+5/AIdgAS+BEFkCX9FeBXbANeoBfCE6WDirAEDgCKyBPRYDaoyACyjU1oznNIAbajU6X8O4EC6BDS80y+HN5wGyyFYwpBN8HYfAp8TvADGgwCtSCfovgtLH1PLnbZByJzIGshAB1TPLTzEbAFb+HLcZ6QTAhUAeKLSacggmhna2wJ10gU1fc1AHwJrTbFOakgSYSqJEMyOfPRoQMvqDg84F5SYwACeRKnOeK6XkH+iS+Il2zxzySfp9dAqWS/i8SiNsgUCLpvyWBs39cQUznivkXo0wqk/giJLAoceYo5vqg5OA9gjUXr2AHVBoGXIBnoVI6f7myafCQyKLeJBXSzTXFm0LwS67OP9V0DwzblLIfoBPcG+8DusnG/xj8nYNvJbtw4nwn0Od6TSH4NVfmZatLf4rzOqR4CF94Dv0YbJrdyaIdg0ZQCFr498XPG07JcAMOwDpYpRMrU/8WYAAGm1AqkjQYIAAAAABJRU5ErkJggg=="
 
 /***/ }),
 
@@ -8818,7 +8829,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 46:
+/***/ 50:
 /*!*******************************************************************!*\
   !*** /Users/vergil/huibo/huibo_wx/node_modules/js-md5/src/md5.js ***!
   \*******************************************************************/
@@ -8851,7 +8862,7 @@ module.exports = g;
     root = self;
   }
   var COMMON_JS = !root.JS_MD5_NO_COMMON_JS && typeof module === 'object' && module.exports;
-  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 49);
+  var AMD =  true && __webpack_require__(/*! !webpack amd options */ 53);
   var ARRAY_BUFFER = !root.JS_MD5_NO_ARRAY_BUFFER && typeof ArrayBuffer !== 'undefined';
   var HEX_CHARS = '0123456789abcdef'.split('');
   var EXTRA = [128, 32768, 8388608, -2147483648];
@@ -9509,11 +9520,11 @@ module.exports = g;
     }
   }
 })();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 47), __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 51), __webpack_require__(/*! ./../../../../../../../Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
 
-/***/ 47:
+/***/ 51:
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -9544,7 +9555,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 48);
+        if (!path) path = __webpack_require__(/*! path */ 52);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -9558,7 +9569,7 @@ exports.features = {};
 
 /***/ }),
 
-/***/ 48:
+/***/ 52:
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -9868,11 +9879,11 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 47)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 51)))
 
 /***/ }),
 
-/***/ 49:
+/***/ 53:
 /*!****************************************!*\
   !*** (webpack)/buildin/amd-options.js ***!
   \****************************************/
@@ -9886,18 +9897,18 @@ module.exports = __webpack_amd_options__;
 
 /***/ }),
 
-/***/ 58:
+/***/ 62:
 /*!*********************************************************************************************!*\
   !*** ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator/index.js ***!
   \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ 59);
+module.exports = __webpack_require__(/*! regenerator-runtime */ 63);
 
 /***/ }),
 
-/***/ 59:
+/***/ 63:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -9928,7 +9939,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 60);
+module.exports = __webpack_require__(/*! ./runtime */ 64);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -9945,7 +9956,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 60:
+/***/ 64:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -10806,17 +10817,6 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 87:
-/*!******************************************************************!*\
-  !*** /Users/vergil/huibo/huibo_wx/static/position-recommend.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmOWY3OWI0Yy1iN2JiLTY0NDYtYmUyZS03MzEwNmFjZDY0YTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzlBQjk1MDFBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzlBQjk1MDBBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTI2NDcyYWMtNDVkYi1mMTQ3LTgxYzUtMGYzMzdiN2M4NDNiIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmY5Zjc5YjRjLWI3YmItNjQ0Ni1iZTJlLTczMTA2YWNkNjRhMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps+Iv/UAAAHHSURBVHjatJZNKERRFMffvJnGRpoxSRZSioVJSVIiJisrJF8pG9lZSJIdzUKskCI7kpSkzCxZYEqTBWUUiWJBFqR85bvxP3VGt9fc967xnPr13r3n3vPvvnvuuc8RjUY1E6sGrSAACoCb+5/AIdgAS+BEFkCX9FeBXbANeoBfCE6WDirAEDgCKyBPRYDaoyACyjU1oznNIAbajU6X8O4EC6BDS80y+HN5wGyyFYwpBN8HYfAp8TvADGgwCtSCfovgtLH1PLnbZByJzIGshAB1TPLTzEbAFb+HLcZ6QTAhUAeKLSacggmhna2wJ10gU1fc1AHwJrTbFOakgSYSqJEMyOfPRoQMvqDg84F5SYwACeRKnOeK6XkH+iS+Il2zxzySfp9dAqWS/i8SiNsgUCLpvyWBs39cQUznivkXo0wqk/giJLAoceYo5vqg5OA9gjUXr2AHVBoGXIBnoVI6f7myafCQyKLeJBXSzTXFm0LwS67OP9V0DwzblLIfoBPcG+8DusnG/xj8nYNvJbtw4nwn0Od6TSH4NVfmZatLf4rzOqR4CF94Dv0YbJrdyaIdg0ZQCFr498XPG07JcAMOwDpYpRMrU/8WYAAGm1AqkjQYIAAAAABJRU5ErkJggg=="
-
-/***/ }),
-
 /***/ 9:
 /*!******************************************************!*\
   !*** /Users/vergil/huibo/huibo_wx/common/js/http.js ***!
@@ -10825,8 +10825,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADg
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
-{
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
   config: {
     baseUrl: "",
     header: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -10864,10 +10863,13 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADg
       };
 
       _config = Object.assign({}, _this.config, options);
+      _config.data = Object.assign(_config.data || {}, Object);
       _config.requestId = new Date().getTime();
       _config.data.token = _this.$tokens;
-      _config.data.mobilesys = 'ios';
+      _config.data.mobilesys = 'weixin';
       _config.data.device_token = 'asdfadfasdfadfadsfa';
+
+
       if (_this.interceptor.request) {
         _this.interceptor.request(_config);
       }

@@ -1,10 +1,24 @@
 //字体图标引入
 @import "@/common/css/iconFont";
 
-//汇博主题色
-$main-color:#45E3D4;
-//汇博主体文字颜色
-$main-font-color:#222;
+//主色
+$main-color:#0fd5c7;
+//第一辅助色
+$sub-color:#2395ea;
+//第二辅助色
+$third-color:#f8664f;
+//标题文字颜色
+$title-font-color:#333;
+//主要文字颜色
+$main-font-color:#666;
+//提示文字颜色
+$tips-font-color:#aaa;
+//线条颜色
+$line-color:#ebebeb;
+//次要提示文字颜色
+$subtips-font-color:#c7c7c7;
+//背景色
+$background-color:#f5f5f5;
 
 //input及textarea提示字体颜色
 .placeholder{
@@ -44,6 +58,12 @@ $main-font-color:#222;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+//边框
+@mixin border($size:1,$style:solid,$color:$line-color){
+	border:$size+rpx $style $color;
+}
+
 
 //简历预览界面标题标记
 @mixin title-marker{

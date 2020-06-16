@@ -7,7 +7,13 @@
     "pages/login/index",
     "pages/login/register",
     "pages/login/set_password",
-    "pages/resume/preview"
+    "pages/resume/preview",
+    "pages/position/list",
+    "pages/common/search/index",
+    "pages/resume/create/base_info",
+    "pages/resume/create/job_purpose",
+    "pages/resume/create/education",
+    "pages/resume/create/recent_work"
   ],
   "subPackages": [],
   "window": {
@@ -38,7 +44,13 @@
         "pagePath": "pages/resume/index",
         "iconPath": "static/tabbar-resume.png",
         "selectedIconPath": "static/tabbar-resume-selected.png",
-        "text": "简历"
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "iconPath": "static/tabbar-mine.png",
+        "selectedIconPath": "static/tabbar-mine-selected.png",
+        "text": "消息"
       },
       {
         "pagePath": "pages/mine/index",
@@ -54,5 +66,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap76.json"
+  "sitemapLocation": "sitemap24.json"
 }

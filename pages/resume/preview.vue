@@ -424,7 +424,7 @@
 
     .content-title{
       margin-bottom:45rpx;
-      @include font(34,34,$main-font-color,bold);
+      @include font(34,34,$title-font-color,bold);
     }
   }
   //公用样式 -end-
@@ -463,10 +463,10 @@
 
         .header-info-title{
           margin-bottom:18rpx;
-          @include font(40,60,$main-font-color,bold);
+          @include font(40,60,$title-font-color,bold);
         }
         .header-info-subtitle{
-          @include font(26,26,$main-font-color);
+          @include font(26,26,$title-font-color);
         }
       }
     }
@@ -480,7 +480,7 @@
       }
       .info-details-item{
         margin-bottom:38rpx;
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
 
         text{
           margin-right:14rpx;
@@ -496,7 +496,7 @@
     .intention-item{
       @include vertical;
       margin-bottom:25rpx;
-      @include font(28,28,$main-font-color);
+      @include font(28,28,$title-font-color);
       &:last-child{
         margin-bottom:0;
       }
@@ -523,7 +523,7 @@
         position:relative;
         margin-bottom: 20rpx;
         padding-left:35rpx;
-        @include font(24,30,$main-font-color);
+        @include font(24,30,$title-font-color);
 
 
         &:before{
@@ -548,7 +548,7 @@
         .business-subtitle-position{
           @include ellipsis;
           max-width: 400rpx;
-          @include font(28,28,$main-font-color,bold);
+          @include font(28,28,$title-font-color,bold);
         }
 
         .business-subtitle-salary{
@@ -563,7 +563,7 @@
 
       .business-company{
         margin-bottom: 20rpx;
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
       }
 
       .business-company-info{
@@ -606,7 +606,7 @@
         position:relative;
         margin-bottom: 20rpx;
         padding-left:35rpx;
-        @include font(24,30,$main-font-color);
+        @include font(24,30,$title-font-color);
 
         &:before{
           @include title-marker
@@ -656,7 +656,7 @@
         position: relative;
         padding-left: 30rpx;
         width: 150rpx;
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
 
         &:before{
           @include title-marker;
@@ -664,7 +664,7 @@
       }
 
       .honor-item-info{
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
       }
     }
   }
@@ -676,7 +676,7 @@
       position: relative;
       margin-bottom: 40rpx;
       padding-left: 30rpx;
-      @include font(28,28,$main-font-color);
+      @include font(28,28,$title-font-color);
 
       &:last-child{
         margin-bottom: 0;
@@ -704,7 +704,7 @@
 
       .skill-item-title{
         width: 145rpx;
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
 
       }
 
@@ -728,7 +728,7 @@
 
       .skill-tips{
         flex-grow: 1;
-        @include font(28,28,$main-font-color);
+        @include font(28,28,$title-font-color);
         text-align: right;
       }
     }

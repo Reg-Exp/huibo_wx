@@ -1,54 +1,82 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index",
-			"style": {
-              "navigationStyle" : "custom"
-            }
-		},
-		{
-			"path": "pages/company/index",
-			"style": {
-				"navigationBarTitleText": "公司列表"
-			}
-		},
-		{
-			"path": "pages/resume/index",
-			"style": {
-				"navigationBarTitleText": "我的简历"
-			}
-		},
-		{
-			"path": "pages/mine/index",
-			"style": {
-				"navigationBarTitleText": "个人中心"
-			}
-		}
-        ,{
-            "path" : "pages/login/index",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/login/register",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/login/set_password",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/resume/preview",
-            "style" : {
-              "navigationBarTitleText": "预览简历"
-            }
-        }
-    ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "汇博网",
-		"navigationBarBackgroundColor": "#FFF",
-		"backgroundColor": "#FFF"
-	},
+  "pages": [
+    {
+      "path": "pages/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/company/index",
+      "style": {
+        "navigationBarTitleText": "公司列表"
+      }
+    },
+    {
+      "path": "pages/resume/index",
+      "style": {
+        "navigationBarTitleText": "我的简历"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/common/login/index",
+      "style": {}
+    },
+    {
+      "path": "pages/common/login/register",
+      "style": {}
+    },
+    {
+      "path": "pages/common/login/set_password",
+      "style": {}
+    },
+    {
+      "path": "pages/resume/preview",
+      "style": {
+        "navigationBarTitleText": "预览简历"
+      }
+    },
+    {
+      "path": "pages/position/list",
+      "style": {}
+    },
+    {
+      "path": "pages/common/search/index",
+      "style": {}
+    },
+    {
+      "path": "pages/resume/create/base_info",
+      "style": {}
+    },
+    {
+      "path": "pages/resume/create/job_purpose",
+      "style": {}
+    },
+    {
+      "path": "pages/resume/create/education",
+      "style": {}
+    },
+    {
+      "path": "pages/resume/create/recent_work",
+      "style": {}
+    },
+    {
+      "path": "pages/message/index",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "汇博网",
+    "navigationBarBackgroundColor": "#FFF",
+    "backgroundColor": "#FFF"
+  },
   "tabBar": {
     "color": "#B0B0B0",
     "selectedColor": "#12E3CD",
@@ -67,11 +95,17 @@
         "selectedIconPath": "static/tabbar-company-selected.png",
         "text": "公司"
       },
+      //{
+        //"pagePath": "pages/resume/index",
+        //"iconPath": "static/tabbar-resume.png",
+        //"selectedIconPath": "static/tabbar-resume-selected.png",
+        //"text": "发现"
+      //},
       {
-        "pagePath": "pages/resume/index",
-        "iconPath": "static/tabbar-resume.png",
-        "selectedIconPath": "static/tabbar-resume-selected.png",
-        "text": "简历"
+        "pagePath": "pages/message/index",
+        "iconPath": "static/tabbar-mine.png",
+        "selectedIconPath": "static/tabbar-mine-selected.png",
+        "text": "消息"
       },
       {
         "pagePath": "pages/mine/index",

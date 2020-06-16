@@ -1,0 +1,66 @@
+
+.resume-title{
+  margin-bottom:30rpx;
+  @include font(48,48,$title-font-color,bold);
+}
+
+//信息面板
+.purpose-panel{
+  .purpose-item{
+    @include space-between;
+    padding: 35rpx 0;
+    border-bottom: 1rpx solid #F1F1F1;
+
+    .purpose-item-info{
+      @include vertical;
+      flex-grow: 1;
+
+      .purpose-item-title{
+        flex-shrink: 0;
+        margin-right: 50rpx;
+        width: 112rpx;
+        @include font(28,28,#888);
+        text-align-last: justify;
+      }
+
+      input,
+      picker,
+      .purpose-item-select {
+        flex-grow:1;
+        @include font(34,45,$title-font-color);
+      }
+
+    }
+
+    .purpose-item-more{
+      flex-shrink: 0;
+      @include font(30,30,#bbb)
+    }
+
+  }
+}
+//信息面板 -end-
+
+//下一步
+.resume-footer{
+  position:fixed;
+  left:0;
+  bottom:0;
+  display:block;
+  box-sizing:border-box;
+  width:100%;
+  padding:30rpx 40rpx;
+  background:#fff;
+  border-top:1rpx solid #f1f1f1;
+
+  .resume-next{
+    width:100%;
+    height:88rpx;
+    @include font(34,88,#fff);
+    text-align:center;
+    background:$main-color;
+    border-radius:10rpx;
+  }
+
+}
+//下一步 -end-

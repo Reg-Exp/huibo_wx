@@ -276,7 +276,7 @@
   margin-bottom: 30rpx;
   font-size: 50rpx;
   line-height: 50rpx;
-  color: #222;
+  color: #666;
   font-weight: bold;
 }
 .login-operation-item {
@@ -296,14 +296,14 @@
           flex-grow: 1;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .login-operation-item .login-operation-icon {
   display: block;
   margin-right: 20rpx;
   font-size: 34rpx !important;
-  color: #222;
+  color: #666;
 }
 .login-operation-item .login-operation-empty {
   font-size: 26.5rpx;
@@ -325,7 +325,7 @@
 .login-tocode {
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 page {

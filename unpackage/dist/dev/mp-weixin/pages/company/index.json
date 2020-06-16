@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "公司列表",
-  "usingComponents": {}
+  "usingComponents": {
+    "company-list": "/components/CompanyList"
+  }
 }

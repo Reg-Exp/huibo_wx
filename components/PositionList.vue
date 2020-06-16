@@ -37,7 +37,7 @@
         </view>
       </view>
       <view class="position-recommend">
-        <img src="../static/position-recommend.png" alt="">
+        <image src="../static/position-recommend.png" alt=""></image>
         根据浏足迹为你推荐
       </view>
     </view>

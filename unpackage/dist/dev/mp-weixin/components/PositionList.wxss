@@ -276,7 +276,7 @@
   margin-bottom: 30rpx;
   font-size: 50rpx;
   line-height: 50rpx;
-  color: #222;
+  color: #666;
   font-weight: bold;
 }
 .login-operation-item.data-v-538c91b1 {
@@ -296,14 +296,14 @@
           flex-grow: 1;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .login-operation-item .login-operation-icon.data-v-538c91b1 {
   display: block;
   margin-right: 20rpx;
   font-size: 34rpx !important;
-  color: #222;
+  color: #666;
 }
 .login-operation-item .login-operation-empty.data-v-538c91b1 {
   font-size: 26.5rpx;
@@ -325,7 +325,7 @@
 .login-tocode.data-v-538c91b1 {
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .position-item.data-v-538c91b1 {
@@ -360,7 +360,7 @@
   max-width: 250rpx;
   font-size: 36rpx;
   line-height: 36rpx;
-  color: #222;
+  color: #666;
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -427,7 +427,7 @@
   margin-bottom: 15rpx;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .position-item .positon-company .company-info .company-info-panel .company-tips.data-v-538c91b1 {

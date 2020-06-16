@@ -276,7 +276,7 @@
   margin-bottom: 30rpx;
   font-size: 50rpx;
   line-height: 50rpx;
-  color: #222;
+  color: #666;
   font-weight: bold;
 }
 .login-operation-item {
@@ -296,14 +296,14 @@
           flex-grow: 1;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .login-operation-item .login-operation-icon {
   display: block;
   margin-right: 20rpx;
   font-size: 34rpx !important;
-  color: #222;
+  color: #666;
 }
 .login-operation-item .login-operation-empty {
   font-size: 26.5rpx;
@@ -325,7 +325,7 @@
 .login-tocode {
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 page {
@@ -335,7 +335,7 @@ page {
 .index-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -40rpx;
   left: 0;
   z-index: 900;
   box-sizing: border-box;
@@ -372,7 +372,7 @@ page {
   padding-right: 20rpx;
   font-size: 32rpx;
   line-height: 32rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
   border-right: 1rpx solid #F1F1F1;
 }
@@ -453,7 +453,7 @@ page {
 .index-position-recommend {
   position: -webkit-sticky;
   position: sticky;
-  top: 350rpx;
+  top: 310rpx;
   left: 0;
   z-index: 900;
   display: -webkit-box;
@@ -517,7 +517,7 @@ page {
 .index-filtrate {
   position: -webkit-sticky;
   position: sticky;
-  top: 470rpx;
+  top: 415rpx;
   left: 0;
   display: -webkit-box;
   display: -webkit-flex;

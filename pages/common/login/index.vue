@@ -72,6 +72,7 @@
 
         this.$http.post('loginnew', this.req).then(res => {
           this.$utils.setStorageSync('token', res.data.data.token);
+          console.log(this.$utils.getStorageSync('token'));
           this.$utils.showToast('登录成功', 'none', 2000);
           setTimeout(() => {
             this.$utils.reLaunch('../index')

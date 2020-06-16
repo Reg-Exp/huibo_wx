@@ -8,7 +8,7 @@
           重庆
           <text class="iconfont iconcondition-down"></text>
         </view>
-        <view class="index-search-container">
+        <view class="index-search-container" @tap="navTo(`common/search/index`)">
           <text class="iconfont iconsearch-find"></text>
           请输入职位或公司
         </view>
@@ -130,12 +130,13 @@
           visit_type:'',
           code_id: 0,
           base_jobsort:'',
+          type:1,
         },
         //推荐职位标记
         recommendMark:0,
         //推荐职位列表   获取数据后可删除
         recommendList:['推荐','UI设计',"建筑工程师",'推荐','UI设计',"建筑工程师"],
-
+        //综合及附近快捷筛选切换
         filtrate:1,
       }
     },
@@ -175,7 +176,7 @@
   //顶部搜索区域
   .index-header {
     position:sticky;
-    top:0;
+    top:-40rpx;
     left:0;
     z-index:900;
     box-sizing:border-box;
@@ -202,7 +203,7 @@
       .index-header-area {
         @include vertical;
         padding-right:20rpx;
-        @include font(32,32,$main-font-color);
+        @include font(32,32,$title-font-color);
         border-right:1rpx solid #F1F1F1;
 
         .iconcondition-down {
@@ -262,7 +263,7 @@
   //职位推荐导航
   .index-position-recommend{
     position: sticky;
-    top: 350rpx;
+    top: 310rpx;
     left: 0;
     z-index: 900;
     display: flex;
@@ -318,7 +319,7 @@
   //页面筛选
   .index-filtrate{
     position: sticky;
-    top: 470rpx;
+    top: 415rpx;
     left: 0;
     @include space-between;
     padding: 35rpx 40rpx 20rpx;
@@ -360,6 +361,5 @@
       }
     }
   }
-
   //页面筛选 -end-
 </style>

@@ -276,7 +276,7 @@
   margin-bottom: 30rpx;
   font-size: 50rpx;
   line-height: 50rpx;
-  color: #222;
+  color: #666;
   font-weight: bold;
 }
 .login-operation-item {
@@ -296,14 +296,14 @@
           flex-grow: 1;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 .login-operation-item .login-operation-icon {
   display: block;
   margin-right: 20rpx;
   font-size: 34rpx !important;
-  color: #222;
+  color: #666;
 }
 .login-operation-item .login-operation-empty {
   font-size: 26.5rpx;
@@ -325,7 +325,7 @@
 .login-tocode {
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #666;
   font-weight: normal;
 }
 page {
@@ -341,7 +341,7 @@ page {
   margin-bottom: 45rpx;
   font-size: 34rpx;
   line-height: 34rpx;
-  color: #222;
+  color: #333;
   font-weight: bold;
 }
 .header {
@@ -388,13 +388,13 @@ page {
   margin-bottom: 18rpx;
   font-size: 40rpx;
   line-height: 60rpx;
-  color: #222;
+  color: #333;
   font-weight: bold;
 }
 .header .header-info .header-info-panel .header-info-subtitle {
   font-size: 26rpx;
   line-height: 26rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .header .header-info-details .info-details-container {
@@ -412,7 +412,7 @@ page {
   margin-bottom: 38rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .header .header-info-details .info-details-item text {
@@ -432,7 +432,7 @@ page {
   margin-bottom: 25rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .intention-panel .intention-item:last-child {
@@ -460,7 +460,7 @@ page {
   padding-left: 35rpx;
   font-size: 24rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .business-panel .business-item .business-title:before {
@@ -506,7 +506,7 @@ page {
   max-width: 400rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: bold;
 }
 .business-panel .business-item .business-subtitle .business-subtitle-salary {
@@ -523,7 +523,7 @@ page {
   margin-bottom: 20rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .business-panel .business-item .business-company-info {
@@ -577,7 +577,7 @@ page {
   padding-left: 35rpx;
   font-size: 24rpx;
   line-height: 30rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .education-panel .education-panel-item .education-title:before {
@@ -641,7 +641,7 @@ page {
   width: 150rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .honor-panel .honor-item .honor-item-date:before {
@@ -659,7 +659,7 @@ page {
 .honor-panel .honor-item .honor-item-info {
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .language-panel .language-item {
@@ -668,7 +668,7 @@ page {
   padding-left: 30rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .language-panel .language-item:last-child {
@@ -705,7 +705,7 @@ page {
   width: 145rpx;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
 }
 .skill-panel .skill-item .skill-progress-container {
@@ -721,7 +721,7 @@ page {
   left: 0;
   width: 33%;
   height: 10rpx;
-  background: #45E3D4;
+  background: #0fd5c7;
   border-radius: 10rpx;
 }
 .skill-panel .skill-item .skill-tips {
@@ -730,7 +730,7 @@ page {
           flex-grow: 1;
   font-size: 28rpx;
   line-height: 28rpx;
-  color: #222;
+  color: #333;
   font-weight: normal;
   text-align: right;
 }

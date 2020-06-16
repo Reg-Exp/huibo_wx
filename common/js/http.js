@@ -1,4 +1,3 @@
-
 export default {
   config: {
     baseUrl: "",
@@ -37,10 +36,13 @@ export default {
       }
 
       _config = Object.assign({}, this.config, options)
+      _config.data = Object.assign(_config.data || {}, Object)
       _config.requestId = new Date().getTime()
-      _config.data.token= this.$tokens
-      _config.data.mobilesys= 'ios';
-      _config.data.device_token= 'asdfadfasdfadfadsfa';
+      _config.data.token = this.$tokens;
+      _config.data.mobilesys = 'weixin';
+      _config.data.device_token = 'asdfadfasdfadfadsfa';
+
+
       if (this.interceptor.request) {
         this.interceptor.request(_config)
       }
