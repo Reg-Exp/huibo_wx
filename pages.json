@@ -9,7 +9,7 @@
     {
       "path": "pages/company/index",
       "style": {
-        "navigationBarTitleText": "公司列表"
+        "navigationBarTitleText": "公司"
       }
     },
     {
@@ -69,6 +69,12 @@
     {
       "path": "pages/message/index",
       "style": {}
+    },
+    {
+      "path": "pages/common/select_area/index",
+      "style": {
+        "navigationBarTitleText": "地区选择"
+      }
     }
   ],
   "globalStyle": {

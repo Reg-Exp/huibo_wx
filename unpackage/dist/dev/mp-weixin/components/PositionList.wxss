@@ -360,7 +360,7 @@
   max-width: 250rpx;
   font-size: 36rpx;
   line-height: 36rpx;
-  color: #666;
+  color: #333;
   font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -419,6 +419,7 @@
   margin-right: 24rpx;
   width: 64rpx;
   height: 64rpx;
+  border-radius: 10rpx;
 }
 .position-item .positon-company .company-info .company-info-panel.data-v-538c91b1 {
   max-width: 370rpx;
@@ -427,7 +428,7 @@
   margin-bottom: 15rpx;
   font-size: 30rpx;
   line-height: 30rpx;
-  color: #666;
+  color: #333;
   font-weight: normal;
 }
 .position-item .positon-company .company-info .company-info-panel .company-tips.data-v-538c91b1 {

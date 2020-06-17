@@ -409,7 +409,134 @@ page {
 .index-nav-container {
   background: #0DDFCE;
 }
-.index-nav-container .index-nav {
+.index-nav-container .index-nav-panel {
+  padding: 45rpx 40rpx;
+  background: #fff;
+  border-top-left-radius: 25rpx;
+  border-top-right-radius: 25rpx;
+}
+.index-nav-container .index-nav-panel .index-interview {
+  margin-bottom: 45rpx;
+  background: #fff;
+  border-radius: 15rpx;
+  box-shadow: 0 0 35rpx 0 #f0f0f0;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 30rpx 20rpx 40rpx;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-header .interview-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #333;
+  font-weight: normal;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-header .interview-title ._span {
+  margin-right: 15rpx;
+  font-size: 40rpx;
+  line-height: 40rpx;
+  color: #f8664f;
+  font-weight: normal;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-header .interview-clock {
+  width: 135rpx;
+  height: 56rpx;
+  font-size: 28rpx;
+  line-height: 56rpx;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  background: #0fd5c7;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 13rpx 0 rgba(15, 213, 198, 0.55);
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 20rpx 40rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-content-panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-content-panel .interview-icon {
+  margin-right: 24rpx;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 10rpx;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-content-panel .interview-info .interview-info-title {
+  margin-bottom: 16rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  color: #333;
+  font-weight: normal;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-content-panel .interview-info .interview-info-details {
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #aaa;
+  font-weight: normal;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-date .interview-date-day {
+  margin-bottom: 14rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: #aaa;
+  font-weight: normal;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-content .interview-date .interview-date-time {
+  font-size: 56rpx;
+  line-height: 56rpx;
+  color: #333;
+  font-weight: bold;
+}
+.index-nav-container .index-nav-panel .index-interview .interview-footer {
+  font-size: 30rpx;
+  line-height: 85rpx;
+  color: #aaa;
+  font-weight: normal;
+  text-align: center;
+}
+.index-nav-container .index-nav-panel .index-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -420,12 +547,8 @@ page {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   box-sizing: border-box;
-  padding: 45rpx 40rpx;
-  background: #fff;
-  border-top-left-radius: 25rpx;
-  border-top-right-radius: 25rpx;
 }
-.index-nav-container .index-nav .index-nav-item {
+.index-nav-container .index-nav-panel .index-nav .index-nav-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -437,13 +560,13 @@ page {
   -webkit-flex-direction: column;
           flex-direction: column;
 }
-.index-nav-container .index-nav .index-nav-item image {
+.index-nav-container .index-nav-panel .index-nav .index-nav-item image {
   display: block;
   width: 60rpx;
   height: 60rpx;
   margin-bottom: 20rpx;
 }
-.index-nav-container .index-nav .index-nav-item .nav-item-text {
+.index-nav-container .index-nav-panel .index-nav .index-nav-item .nav-item-text {
   font-size: 24rpx;
   line-height: 24rpx;
   color: #000;
@@ -466,14 +589,19 @@ page {
   background: #fff;
   border-bottom: 1rpx solid #EBEBEB;
 }
-.index-position-recommend .recommend-list-container {
+.index-position-recommend .recommend-list-panel {
+  position: relative;
   max-width: 440rpx;
   height: 80rpx;
 }
-.index-position-recommend .recommend-list-container::-webkit-scrollbar {
+.index-position-recommend .recommend-list-panel .recommend-list-container {
+  width: 100%;
+  height: 100%;
+}
+.index-position-recommend .recommend-list-panel .recommend-list-container::-webkit-scrollbar {
   display: none;
 }
-.index-position-recommend .recommend-list-container .recommend-list {
+.index-position-recommend .recommend-list-panel .recommend-list-container .recommend-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -481,7 +609,7 @@ page {
   -webkit-align-items: center;
           align-items: center;
 }
-.index-position-recommend .recommend-list-container .recommend-list .recommend-item {
+.index-position-recommend .recommend-list-panel .recommend-list-container .recommend-list .recommend-item {
   font-size: 30rpx;
   line-height: 40rpx;
   color: #666;
@@ -491,14 +619,17 @@ page {
   margin-right: 30rpx;
   padding-bottom: 40rpx;
 }
-.index-position-recommend .recommend-list-container .recommend-list .active {
+.index-position-recommend .recommend-list-panel .recommend-list-container .recommend-list .recommend-item:last-child {
+  padding-right: 40rpx;
+}
+.index-position-recommend .recommend-list-panel .recommend-list-container .recommend-list .active {
   position: relative;
   font-size: 40rpx;
   line-height: 40rpx;
   color: #333;
   font-weight: bold;
 }
-.index-position-recommend .recommend-list-container .recommend-list .active:after {
+.index-position-recommend .recommend-list-panel .recommend-list-container .recommend-list .active:after {
   content: '';
   position: absolute;
   left: 0;
@@ -510,6 +641,15 @@ page {
   background: #0FD5C7;
   border-radius: 3rpx;
 }
+.index-position-recommend .recommend-list-panel .recommend-mask {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 40rpx;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+}
 .index-position-recommend .recommend-add ._img {
   width: 36rpx;
   height: 36rpx;
@@ -519,6 +659,7 @@ page {
   position: sticky;
   top: 415rpx;
   left: 0;
+  z-index: 900;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;

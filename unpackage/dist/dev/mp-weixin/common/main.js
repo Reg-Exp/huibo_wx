@@ -95,7 +95,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+var _utils = _interopRequireDefault(__webpack_require__(/*! ./common/js/utils */ 13));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var _default =
+
 {
   onLaunch: function onLaunch() {var _this = this;
     /**
@@ -103,21 +105,28 @@ __webpack_require__.r(__webpack_exports__);
                                                     * @author Vergil 2020-05-21
                                                     * @param number $user_id  用户推荐码
                                                     */
-    uni.getLocation({
-      type: 'wgs84',
-      success: function success(res) {
-        uni.setStorageSync('location', [res.latitude.toString(), res.longitude.toString()]);
-        _this.$http.get('getAreaIdByXY', {
-          map_lat: res.latitude.toString(),
-          map_lng: res.longitude.toString() }).
-        then(function (response) {
-          uni.setStorageSync('auto_local_area_name', response.data.area_name);
-          uni.setStorageSync('auto_local_area_id', response.data.area_id);
-        }).catch(function (e) {
-        });
-      },
-      fail: function fail() {
-      } });
+
+    if (!_utils.default.getStorageSync('user_area_id')) {
+      uni.getLocation({
+        type: 'wgs84',
+        success: function success(res) {
+          uni.setStorageSync('location', [res.latitude.toString(), res.longitude.toString()]);
+          _this.$http.get('get_area_xy', {
+            map_lat: res.latitude.toString(),
+            map_lng: res.longitude.toString() }).
+          then(function (response) {
+            _utils.default.setStorageSync('user_area_name', response.data.data.area_name);
+            _utils.default.setStorageSync('user_area_id', response.data.data.area_id);
+          }).catch(function (e) {
+          });
+        },
+        fail: function fail() {
+          _utils.default.setStorageSync('user_area_name', '重庆');
+          _utils.default.setStorageSync('user_area_id', '0300');
+        } });
+
+    }
+
 
   },
   onShow: function onShow() {

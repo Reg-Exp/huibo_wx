@@ -130,7 +130,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var CompanyList = function CompanyList() {__webpack_require__.e(/*! require.ensure | components/CompanyList */ "components/CompanyList").then((function () {return resolve(__webpack_require__(/*! ../../components/CompanyList */ 142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var CompanyList = function CompanyList() {__webpack_require__.e(/*! require.ensure | components/CompanyList */ "components/CompanyList").then((function () {return resolve(__webpack_require__(/*! ../../components/CompanyList */ 155));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
 
 
 

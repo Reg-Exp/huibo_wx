@@ -4,16 +4,18 @@
     "pages/company/index",
     "pages/resume/index",
     "pages/mine/index",
-    "pages/login/index",
-    "pages/login/register",
-    "pages/login/set_password",
+    "pages/common/login/index",
+    "pages/common/login/register",
+    "pages/common/login/set_password",
     "pages/resume/preview",
     "pages/position/list",
     "pages/common/search/index",
     "pages/resume/create/base_info",
     "pages/resume/create/job_purpose",
     "pages/resume/create/education",
-    "pages/resume/create/recent_work"
+    "pages/resume/create/recent_work",
+    "pages/message/index",
+    "pages/common/select_area/index"
   ],
   "subPackages": [],
   "window": {
@@ -41,13 +43,7 @@
         "text": "公司"
       },
       {
-        "pagePath": "pages/resume/index",
-        "iconPath": "static/tabbar-resume.png",
-        "selectedIconPath": "static/tabbar-resume-selected.png",
-        "text": "发现"
-      },
-      {
-        "pagePath": "pages/mine/index",
+        "pagePath": "pages/message/index",
         "iconPath": "static/tabbar-mine.png",
         "selectedIconPath": "static/tabbar-mine-selected.png",
         "text": "消息"
@@ -66,5 +62,5 @@
     }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap24.json"
+  "sitemapLocation": "sitemap5.json"
 }

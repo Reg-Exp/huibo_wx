@@ -4,7 +4,7 @@
     <view class="index-header">
       <image src="https://assets.huibo.com/img/wx_mobile/index-header-title.png" class="index-header-title"></image>
       <view class="index-header-search">
-        <view class="index-header-area">
+        <view class="index-header-area" @tap="navTo(`common/select_area/index`)">
           重庆
           <text class="iconfont iconcondition-down"></text>
         </view>
@@ -16,28 +16,72 @@
     </view>
     <!--顶部搜索区域 -end- -->
 
-    <!--顶部导航区域-->
+    <!--顶部导航区域及面试日程-->
     <view class="index-nav-container">
-      <view class="index-nav">
-        <view class="index-nav-item" v-for="(item,index) in nav" :key="index" @tap="navTo(`${item.url}`)">
-          <image :src="item.image"></image>
-          <view class="nav-item-text">
-            {{item.title}}
+      <view class="index-nav-panel">
+        <view class="index-interview">
+          <view class="interview-header">
+            <veiw class="interview-title">
+              <span class="iconfont iconjob-fair-time"></span>
+              今日面试提醒
+            </veiw>
+            <view class="interview-clock">
+              打卡签到
+            </view>
+          </view>
+          <view class="interview-content">
+            <view class="interview-content-panel">
+              <image class="interview-icon"></image>
+              <view class="interview-info">
+                <view class="interview-info-title">
+                  贝壳新房
+                </view>
+                <view class="interview-info-details">
+                  产品经理 · 10-15K
+                </view>
+              </view>
+            </view>
+
+            <view class="interview-date">
+              <view class="interview-date-day">
+                今天
+              </view>
+              <view class="interview-date-time">
+                14:30
+              </view>
+            </view>
+          </view>
+          <view class="interview-footer">
+            查看更多
+          </view>
+        </view>
+
+
+        <view class="index-nav">
+          <view class="index-nav-item" v-for="(item,index) in nav" :key="index" @tap="navTo(`${item.url}`)">
+            <image :src="item.image"></image>
+            <view class="nav-item-text">
+              {{item.title}}
+            </view>
           </view>
         </view>
       </view>
+
     </view>
-    <!--顶部导航区域 -end- -->
+    <!--顶部导航区域及面试日程 -end- -->
 
     <!--职位推荐导航-->
     <view class="index-position-recommend">
-      <scroll-view scroll-x="true" class="recommend-list-container">
-        <view class="recommend-list">
-          <view class="recommend-item" v-for ="(item,index) in recommendList" :key="index" :class="{active:recommendMark == index}">
-            {{item}}
+      <view class="recommend-list-panel">
+        <scroll-view scroll-x="true" class="recommend-list-container">
+          <view class="recommend-list">
+            <view class="recommend-item" v-for ="(item,index) in recommendList" :key="index" :class="{active:recommendMark == index}">
+              {{item}}
+            </view>
           </view>
-        </view>
-      </scroll-view>
+        </scroll-view>
+        <view class="recommend-mask"></view>
+      </view>
       <view class="recommend-add">
         <img src="https://assets.huibo.com/img/wx_mobile/index-add.png" alt="">
       </view>
@@ -227,38 +271,124 @@
   }
   //顶部搜索区域 -end-
 
-  //顶部导航区域
+  //顶部导航区域及面试日程
   .index-nav-container {
     background:#0DDFCE;
 
-    .index-nav {
-      @include space-between;
-      box-sizing:border-box;
-      padding:45rpx 40rpx;
+    .index-nav-panel{
+      padding:45rpx 40rpx ;
       background:#fff;
       border-top-left-radius:25rpx;
       border-top-right-radius:25rpx;
 
-      .index-nav-item{
-        @include vertical;
-        flex-direction:column;
+      .index-interview{
+        margin-bottom: 45rpx;
+        background: #fff;
+        border-radius: 15rpx;
+        box-shadow:0 0 35rpx 0 rgba(240,240,240,1);
 
-        image {
-          display:block;
-          width:60rpx;
-          height:60rpx;
-          margin-bottom:20rpx;
+        .interview-header{
+          @include space-between;
+          padding: 30rpx 20rpx 40rpx;
+
+          .interview-title{
+            @include vertical;
+            @include font(30,40,$title-font-color);
+
+            span{
+              margin-right: 15rpx;
+              @include font(40,40,$third-color);
+            }
+          }
+
+          .interview-clock{
+            width: 135rpx;
+            height: 56rpx;
+            @include font(28,56,#fff);
+            text-align: center;
+            background: $main-color;
+            border-radius: 8rpx;
+            box-shadow:0 2rpx 13rpx 0 rgba(15,213,198,0.55);
+          }
         }
 
-        .nav-item-text {
-          @include font(24,24,#000);
-          text-align:center;
+        .interview-content{
+          @include space-between;
+          padding:0 20rpx 40rpx;
+          border-bottom: 1rpx solid $line-color;
+
+          .interview-content-panel{
+            @include vertical;
+
+            .interview-icon{
+              margin-right: 24rpx;
+              width: 64rpx;
+              height: 64rpx;
+              border-radius: 10rpx;
+            }
+
+            .interview-info{
+              .interview-info-title{
+                margin-bottom: 16rpx;
+                @include font(32,32,$title-font-color);
+              }
+              .interview-info-details{
+                @include font(24,24,$tips-font-color);
+              }
+            }
+
+          }
+
+          .interview-date{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .interview-date-day{
+              margin-bottom: 14rpx;
+              @include font(24,24,$tips-font-color);
+            }
+
+            .interview-date-time{
+              @include font(56,56,$title-font-color,bold);
+            }
+          }
+        }
+
+        .interview-footer{
+          @include font(30,85,$tips-font-color);
+          text-align: center;
+        }
+      }
+
+      .index-nav {
+        @include space-between;
+        box-sizing:border-box;
+
+
+        .index-nav-item{
+          @include vertical;
+          flex-direction:column;
+
+          image {
+            display:block;
+            width:60rpx;
+            height:60rpx;
+            margin-bottom:20rpx;
+          }
+
+          .nav-item-text {
+            @include font(24,24,#000);
+            text-align:center;
+          }
         }
       }
     }
 
+
+
   }
-  //顶部导航区域 -end-
+  //顶部导航区域及面试日程 -end-
 
   //职位推荐导航
   .index-position-recommend{
@@ -272,40 +402,59 @@
     background: #fff;
     border-bottom: 1rpx solid #EBEBEB;
 
-    .recommend-list-container{
+    .recommend-list-panel{
+      position: relative;
       max-width: 440rpx;
       height: 80rpx;
-      &::-webkit-scrollbar {
-        display:none
-      }
-      .recommend-list{
-        @include vertical;
-
-
-        .recommend-item{
-          @include font(30,40,#666);
-          flex-shrink: 0;
-          margin-right: 30rpx;
-          padding-bottom: 40rpx;
+      .recommend-list-container{
+        width: 100%;
+        height: 100%;
+        &::-webkit-scrollbar {
+          display:none
         }
-        .active{
-          position: relative;
-          @include font(40,40,#333,bold);
-          &:after{
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: 0 auto;
-            width: 48rpx;
-            height: 6rpx;
-            background: #0FD5C7;
-            border-radius: 3rpx;
+        .recommend-list{
+          @include vertical;
+
+
+          .recommend-item{
+            @include font(30,40,#666);
+            flex-shrink: 0;
+            margin-right: 30rpx;
+            padding-bottom: 40rpx;
+
+            &:last-child{
+              padding-right: 40rpx;
+            }
+          }
+          .active{
+            position: relative;
+            @include font(40,40,#333,bold);
+            &:after{
+              content: '';
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              margin: 0 auto;
+              width: 48rpx;
+              height: 6rpx;
+              background: #0FD5C7;
+              border-radius: 3rpx;
+            }
           }
         }
       }
+      .recommend-mask{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 40rpx;
+        background:linear-gradient(to right, rgba(255,255,255,0) , rgba(255,255,255,0.8));
+      }
     }
+
+
 
     .recommend-add{
       img{
@@ -321,6 +470,7 @@
     position: sticky;
     top: 415rpx;
     left: 0;
+    z-index: 900;
     @include space-between;
     padding: 35rpx 40rpx 20rpx;
     background: #fff;

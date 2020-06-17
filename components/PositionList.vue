@@ -75,7 +75,7 @@
 
         .item-title{
           max-width: 250rpx;
-          @include font(36,36,$main-font-color,bold);
+          @include font(36,36,$title-font-color,bold);
           @include ellipsis;
 
         }
@@ -117,6 +117,7 @@
           margin-right: 24rpx;
           width: 64rpx;
           height: 64rpx;
+          border-radius: 10rpx;
         }
 
         .company-info-panel{
@@ -124,7 +125,7 @@
 
           .company-title{
             margin-bottom: 15rpx;
-            @include font(30,30,$main-font-color)
+            @include font(30,30,$title-font-color)
           }
 
           .company-tips{

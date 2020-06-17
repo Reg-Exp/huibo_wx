@@ -207,6 +207,87 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _utils = _interopRequireDefault(__webpack_require__(/*! ../../../common/js/utils */ 13));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -283,10 +364,96 @@ var _utils = _interopRequireDefault(__webpack_require__(/*! ../../../common/js/u
 //
 //
 //
-var _default = { data: function data() {return { //工资选择下标
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {var currentDate = this.getDate({ format: true });return { //工资选择下标
       salaryIndex: 0, //工资列表
-      salaryList: ['请选择', '1000', '2000', '3000'] };}, methods: { //工资选择
-    selectSalary: function selectSalary(e) {this.salaryIndex = e.target.value;}, nextStep: function nextStep() {_utils.default.navTo('education');} } };exports.default = _default;
+      salaryList: ['请选择', '1000', '2000', '3000'], //入职时间
+      entryDate: currentDate, //离职时间
+      dimissionDate: currentDate, //公司性质下标
+      natureIndex: 0, //公司性质列表
+      natureList: ['234', '4324234'] };}, computed: { //屏蔽公司
+    shieldCompany: function shieldCompany(e) {console.log(e);}, startDate: function startDate() {return this.getDate('start');}, endDate: function endDate() {return this.getDate('end');} }, methods: { selectNature: function selectNature(e) {this.natureIndex = e.target.value;}, //工资选择
+    selectEntry: function selectEntry(e) {this.entryDate = e.target.value;}, selectDimission: function selectDimission(e) {this.dimissionDate = e.target.value;}, nextStep: function nextStep() {_utils.default.navTo('education');}, getDate: function getDate(type) {var date = new Date();var year = date.getFullYear();var month = date.getMonth() + 1;if (type === 'start') {year = year - 60;} else if (type === 'end') {year = year + 2;}month = month > 9 ? month : '0' + month;;return "".concat(year, "-").concat(month);} } };exports.default = _default;
 
 /***/ }),
 
@@ -311,9 +478,11 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!/Users/vergil/huibo/huibo_wx/pages/resume/create/recent_work.vue?vue&type=style&index=0&lang=scss& ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Mixin font is missing argument $font-size.\n        on line 163 of /Users/vergil/huibo/huibo_wx/pages/resume/create/recent_work.vue\n>> \t@include font()\n   ----------^\n\n    at runLoaders (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/webpack/lib/NormalModule.js:301:20)\n    at /Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/loader-runner/lib/LoaderRunner.js:233:18\n    at context.callback (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Object.render [as callback] (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/sass-loader/dist/index.js:73:7)\n    at Object.done [as callback] (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/uniapp-cli/node_modules/sass-loader/node_modules/neo-async/async.js:8067:18)\n    at options.error (/Applications/HBuilderX.app/Contents/HBuilderX/plugins/compile-node-sass/node_modules/node-sass-china/lib/index.js:294:32)");
+// extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ })
 

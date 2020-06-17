@@ -2746,17 +2746,6 @@ var _default = {
 
 /***/ }),
 
-/***/ 137:
-/*!******************************************************************!*\
-  !*** /Users/vergil/huibo/huibo_wx/static/position-recommend.png ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmOWY3OWI0Yy1iN2JiLTY0NDYtYmUyZS03MzEwNmFjZDY0YTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzlBQjk1MDFBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzlBQjk1MDBBQTEzMTFFQThEMkZFQjIwRjM5RTY2QkYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTI2NDcyYWMtNDVkYi1mMTQ3LTgxYzUtMGYzMzdiN2M4NDNiIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmY5Zjc5YjRjLWI3YmItNjQ0Ni1iZTJlLTczMTA2YWNkNjRhMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps+Iv/UAAAHHSURBVHjatJZNKERRFMffvJnGRpoxSRZSioVJSVIiJisrJF8pG9lZSJIdzUKskCI7kpSkzCxZYEqTBWUUiWJBFqR85bvxP3VGt9fc967xnPr13r3n3vPvvnvuuc8RjUY1E6sGrSAACoCb+5/AIdgAS+BEFkCX9FeBXbANeoBfCE6WDirAEDgCKyBPRYDaoyACyjU1oznNIAbajU6X8O4EC6BDS80y+HN5wGyyFYwpBN8HYfAp8TvADGgwCtSCfovgtLH1PLnbZByJzIGshAB1TPLTzEbAFb+HLcZ6QTAhUAeKLSacggmhna2wJ10gU1fc1AHwJrTbFOakgSYSqJEMyOfPRoQMvqDg84F5SYwACeRKnOeK6XkH+iS+Il2zxzySfp9dAqWS/i8SiNsgUCLpvyWBs39cQUznivkXo0wqk/giJLAoceYo5vqg5OA9gjUXr2AHVBoGXIBnoVI6f7myafCQyKLeJBXSzTXFm0LwS67OP9V0DwzblLIfoBPcG+8DusnG/xj8nYNvJbtw4nwn0Od6TSH4NVfmZatLf4rzOqR4CF94Dv0YbJrdyaIdg0ZQCFr498XPG07JcAMOwDpYpRMrU/8WYAAGm1AqkjQYIAAAAABJRU5ErkJggg=="
-
-/***/ }),
-
 /***/ 2:
 /*!******************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/mp-vue/dist/mp.runtime.esm.js ***!
